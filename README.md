@@ -25,7 +25,7 @@ The purpose of writing this software is to create a practical application that d
 
 ### Software Demo Video
 
-[Software Demo Video](https://www.youtube.com)
+[Software Demo Video]([https://www.youtube.com](https://youtu.be/59W5oiK9CVY))
 
 ## Cloud Database
 
