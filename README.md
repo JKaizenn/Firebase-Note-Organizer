@@ -1,38 +1,71 @@
-# Overview
+# Notes Organizer DB
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+## Overview
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
+The Notes Organizer DB is a software application designed to help users manage their notes efficiently. This project integrates with a Cloud Database to store, retrieve, update, and delete notes. As a software engineer, this project aims to enhance my skills in cloud database integration, GUI design, and Python programming. The application provides a user-friendly interface to interact with the notes stored in the cloud database.
 
-{Describe your purpose for writing this software.}
+## Description
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
+The Notes Organizer DB is built using Python and Tkinter for the GUI, and it integrates with Google Firestore for cloud-based data storage. The application allows users to perform CRUD (Create, Read, Update, Delete) operations on their notes. Each note consists of a title, content, and a timestamp. The application uses environment variables to securely access the Firestore credentials.
 
-[Software Demo Video](http://youtube.link.goes.here)
+### How to Use the Program
 
-# Cloud Database
+1. **Start the Application**: Run the `main.py` script to launch the application.
+2. **Title Screen**: The title screen provides an option to start the application.
+3. **Main Menu**:
+   - **View Notes**: Displays a list of all notes stored in the cloud database.
+   - **Add Note**: Prompts the user to enter a title and content for a new note.
+   - **Update Note**: Prompts the user to enter a note ID, new title, and new content to update an existing note.
+   - **Delete Note**: Prompts the user to enter a note ID to delete a specific note.
+   - **Exit**: Closes the application.
 
-{Describe the cloud database you are using.}
+### Purpose
 
-{Describe the structure of the database that you created.}
+The purpose of writing this software is to create a practical application that demonstrates cloud database integration and enhances my understanding of GUI design in Python. This project serves as a learning experience in managing cloud-stored data securely and efficiently.
 
-# Development Environment
+### Software Demo Video
 
-{Describe the tools that you used to develop the software}
+[Software Demo Video](https://www.youtube.com)
 
-{Describe the programming language that you used and any libraries.}
+## Cloud Database
 
-# Useful Websites
+### Description
 
-{Make a list of websites that you found helpful in this project}
+The cloud database used for this project is Google Firestore. Firestore is a flexible, scalable database for mobile, web, and server development. It provides real-time synchronization and offline support, making it an excellent choice for applications that require real-time data updates.
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+### Database Structure
 
-# Future Work
+The database structure consists of a single collection named `notes`. Each document in the collection represents a note and contains the following fields:
+- `id`: Unique identifier for the note (auto-generated).
+- `title`: The title of the note.
+- `content`: The content of the note.
+- `timestamp`: The timestamp when the note was created or last updated.
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+## Development Environment
 
-- Item 1
-- Item 2
-- Item 3
+### Tools
+
+- **Visual Studio Code**: Used as the code editor for development.
+- **Git**: For version control.
+- **GitHub**: To host the project repository.
+
+### Programming Language and Libraries
+
+- **Python**: The primary programming language used for the project.
+- **Tkinter**: Used for creating the graphical user interface.
+- **firebase-admin**: For integrating with Google Firestore.
+- **python-dotenv**: To manage environment variables securely.
+
+## Useful Websites
+
+- [Firestore Documentation](https://firebase.google.com/docs/firestore)
+- [Tkinter Documentation](https://docs.python.org/3/library/tkinter.html)
+- [Python-dotenv Documentation](https://saurabh-kumar.com/python-dotenv/)
+- [Google Firebase Console](https://console.firebase.google.com/)
+- [Python Official Website](https://www.python.org/)
+
+## Future Work
+
+- **Improve UI Design**: Enhance the graphical interface for better user experience.
+- **Add Search Functionality**: Allow users to search for notes by title or content.
+- **User Authentication**: Implement user authentication to manage notes for different users.
