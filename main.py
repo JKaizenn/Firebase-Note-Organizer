@@ -1,13 +1,15 @@
+import os
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 from firebase_admin import credentials, firestore, initialize_app
 import datetime
-import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize Firestore DB
-current_directory = os.path.dirname(os.path.abspath(__file__))
-json_path = os.path.join(current_directory, 'Note_Organizer_Firebase_Admin.json')
-print(f'Using JSON path: {json_path}')  # Debugging line to check the path
+json_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 if not os.path.exists(json_path):
     print(f"JSON file not found at: {json_path}")
 cred = credentials.Certificate(json_path)
